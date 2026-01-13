@@ -1,0 +1,27 @@
+# Ignore everything inside root data folder, but ...
+/data/*
+# keep documentation
+!/data/README.md
+# keep sample end_of_study questionnaire data
+!/data/End_of_study_Q_sample.xlsx
+# keep sample raw experimental data
+!/data/1_raw_data_sample/
+!/data/1_raw_data_sample/**
+
+
+# Node dependencies
+node_modules/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# Ignore large auditory stimulus folders (stored on OSF)
+# Auditory stimuli available at: https://doi.org/10.17605/OSF.IO/CJGHY
+/Experiment/RegPatterns/
+/Experiment/IrregPatterns/
+/Experiment/SingleDurations/
+/Experiment/file.wav.wav 
