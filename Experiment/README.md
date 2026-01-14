@@ -105,8 +105,7 @@ During the experiment:
 
 ### Auditory Masking
 During tactile blocks, **white noise** was presented to mask any sound produced by the device vibrations.  
-The masking noise file used in the experiment is:
-- `file.wav`
+The masking noise file used in the experiment is `file.wav.wav`. This file is not tracked due to the big size of the file. To run the tactile blocks, you need to either deactivate this file in the `InPersonFinal.psyexp` or produce a white noise file of about 20 min using `Audacity` software. 
 
 ---
 
@@ -194,7 +193,7 @@ After completing the experiment, participants are **automatically redirected** t
 
 ### Running the Experiment
 1. Open **PsychoPy Builder**.
-2. Load the `.psyexp` file.
+2. Load the `InPersonFinal.psyexp` file.
 4. Run the experiment locally.
 - To run locally, **all audio files must be in `.wav` format**.
 
