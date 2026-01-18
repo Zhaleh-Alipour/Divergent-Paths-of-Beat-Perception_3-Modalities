@@ -218,3 +218,25 @@ These data were later used to assess potential order effects, such as whether co
     - `0` → Cluster 1  
     - `1` → Cluster 2  
     - `2` → Cluster 3
+
+---
+
+## Item_Analysis.xlsx
+
+- **Description**
+  This file is the result of running item analysis that shows performance for each trial and each participant separately where 0 means they answered incorrectly to the trial and 1 means they answered correctly. 
+
+- **Subsequent analysis on the result:**  
+  After executing this analysis and getting the result, 1- in a specific modality and condition (e.g., auditory beat sequence block), we performed the correlation of each trial performance to overal performance (point-biserial correlation), 2- did the same analysis for the three modalities separately while the order of sequences were matched, 3- removed 9 trials (3 trials based on each modalities result) whose correlation was the lowest (i.e. the trials that are too difficult for participants and did not contribute to the overall performance) 
+
+- **Input:**  
+  `data/3_json_files`
+
+- **Analysis code:**  
+  `item_analysis/ItemAnalysis_inPerson.js`
+
+- **Outputs:**  
+  - `results/Item_Analysis.xlsx`  
+
+- **Purpose:**  
+  The purpose of running this analysis and the subsequent analysis was to remove some trials and decrease the size or length of blocks. This was done after most participants reported that the blocks and the whole experiment is too long and tiring for them to keep being focused. 
