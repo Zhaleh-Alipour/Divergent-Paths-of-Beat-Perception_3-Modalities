@@ -483,7 +483,7 @@ function processFile(fileName) { //all the process of finding correct answers, a
             });
         }
         function getSpeed(str) {
-            return parseInt(str.split("unit")[1].split(".mp3")[0]) / 1000;
+            return parseInt(str.split("unit")[1].split(".wav")[0]) / 1000;
         }
         function checkIfDiff(str) {
             str = str.split("IrregPatterns/")[1];
@@ -638,7 +638,7 @@ function processFile(fileName) { //all the process of finding correct answers, a
             return finalArr;
         }
         function getSpeed(str) {
-            return parseInt(str.split("unit")[1].split(".mp3")[0]) / 1000;
+            return parseInt(str.split("unit")[1].split(".wav")[0]) / 1000;
         }
         function checkIfDiff(str) {
             str = str.split("RegPatterns/")[1];
@@ -788,7 +788,7 @@ function processFile(fileName) { //all the process of finding correct answers, a
             return finalArr;
         }
         function getSpeed(str) {
-            return parseInt(str.split("unit")[1].split(".mp3")[0]) / 1000;
+            return parseInt(str.split("unit")[1].split(".wav")[0]) / 1000;
         }
         function checkIfDiff(str) {
             str = str.split("singleDurations/")[1];

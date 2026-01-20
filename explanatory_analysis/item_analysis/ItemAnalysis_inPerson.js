@@ -1,5 +1,4 @@
-// this code shows each trial and participants' answer to that separately. In order to run this code you need to change the name of the 
-// folder 'data' to 'raw2' in the same folder as the code it. 
+// This code outputs participants' performance in each trial separately. 
 
 const fs = require('fs');
 var XLSX = require('xlsx');

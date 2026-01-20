@@ -240,3 +240,24 @@ These data were later used to assess potential order effects, such as whether co
 
 - **Purpose:**  
   The purpose of running this analysis and the subsequent analysis was to remove some trials and decrease the size or length of blocks. This was done after most participants reported that the blocks and the whole experiment is too long and tiring for them to keep being focused. 
+
+## Visual_230_Only.xlsx
+## Visual_250_Only.xlsx
+## Visual_270_Only.xlsx
+
+- **Description**
+  In this experiment, each trial was presented at one of three tempi: 230 ms, 250 ms, or 270 ms.
+  These files show participants’ performance on visual trials at a single specified tempo, allowing tempo-specific evaluation of visual performance.
+  The whole idea is that on a monitor with 60 Hz refresh rate, the duration of visual stimuli would align for 250 ms tempo but not for 230 or 270 ms. 
+
+- **Subsequent analysis on the result:** 
+We compare the results of visual blocks (especially beat sequence block) across the three tempi to see if performance is more accurate for 250 ms compared to 230 and 270 ms. 
+
+- **Input:**  
+  `data/2_preprocessed_data` and then `json_vis230_Only` or `json_vis250_Only` or `json_vis270_Only`
+
+- **Analysis code:**  
+  `visual_speed_filter.js`
+
+- **Outputs:** 
+  `results/Visual_230_Only.xlsx` or `results/Visual_250_Only.xlsx` or `results/Visual_270_Only.xlsx`
