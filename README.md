@@ -24,8 +24,8 @@ The project investigates how lower-level timing abilities contribute to beat per
 - `end_of_study_questionnaire`
   Script for deriving information of interest from the questionnair responses.
 
-- `item_analysis`
-  Script for deriving trial-level performance for each participant. 
+- `exploratory_analysis/`  
+  Scripts for exploratory data analysis (EDA), including trial-level participant performance, visual-block performance as a function of stimulus presentation tempo, and visualization of survey results. 
 
 - `results/`
   xlsx files containing questionnaire results as well as group-level and clustering results.
