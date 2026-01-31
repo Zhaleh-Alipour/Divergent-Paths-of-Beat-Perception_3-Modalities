@@ -21,8 +21,8 @@ The project investigates how lower-level timing abilities contribute to beat per
   Scripts for converting preprocessed data into structured formats used in downstream analyses.
   See `preprocessed_to_xlsx/README.md` for details.
 
-- `end_of_study_questionnaire`
-  Script for deriving information of interest from the questionnair responses.
+- `survey_analysis`
+  Script for deriving information of interest from the questionnaire responses.
 
 - `exploratory_analysis/`  
   Scripts for exploratory data analysis (EDA), including trial-level participant performance, visual-block performance as a function of stimulus presentation tempo, and visualization of survey results. 
