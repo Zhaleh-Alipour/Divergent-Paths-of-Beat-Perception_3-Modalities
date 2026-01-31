@@ -2,7 +2,7 @@
 
 This folder contains outputs from different analyses or questionnaires performed in the project.
 
-## end_of_study_Q.xlsx
+## end_of_study_questionnaire.xlsx
 
 - **Description:**  
   After the end of the experiment, participants completed a questionnaire created on Qualtrics that included biographical, music-related, and experiment-related questions.
@@ -12,10 +12,10 @@ This folder contains outputs from different analyses or questionnaires performed
 **Note:** This file is not shared but a sample of questionnaire file `End_of_study_Q_sample.xlsx` is shared for reproducing the code. 
 
 - **Analysis:**  
-  A preprocessing step was applied to the raw questionnaire data to extract variables of interest. This analysis is saved in `end_of_study_questionnaire/Qualtrics analysis.py`. The processed information was then compiled and saved into a cleaned output file.
+  A preprocessing step was applied to the raw questionnaire data to extract variables of interest. This analysis is saved in `survey_analysis/Qualtrics analysis.py`. The processed information was then compiled and saved into a cleaned output file.
 
 - **Output:**  
-  `end_of_study_Q.xlsx` — this file contains the variables required for inclusion in the final `report/`paper.
+  `end_of_study_questionnaire.xlsx` — this file contains the variables required for inclusion in the final `report/`paper.
 
 - **Notes:**  
   - Columns with labels such as `(>=5 -> 2)` indicate categorical encoding, where:
