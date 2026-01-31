@@ -1,7 +1,7 @@
-# Timing Perception Experiment (Auditory & Visual)
+# Timing Perception Experiment (Auditory, Visual, tactile)
 
 ## Overview
-This repository contains a PsychoPy experiment designed to investigate **human timing perception** and to test the hypothesis that lower-level timing abilities can contribute to beat perception across **auditory** and **visual** modalities. The experiment was developed using **PsychoPy v2021.2.3** and deployed online via **Pavlovia**.
+This repository contains a PsychoPy experiment designed to investigate **human timing perception** and to test the hypothesis that lower-level timing abilities can contribute to beat perception across **auditory**, **visual** and **tactile** modalities. The experiment was developed using **PsychoPy v2021.2.3**.
 
 The study consists of **nine experimental blocks**, presented in a **randomized order**:
 - **3 auditory blocks**
@@ -13,7 +13,7 @@ Each modality includes the following block types:
 2. **Irregular (non-beat) patterns**
 3. **Single-interval durations**
 
-This repository includes all code, stimuli, and preprocessing scripts required to run the experiment.
+This folder includes all code, stimuli, and files required to run the experiment.
 
 ---
 
@@ -29,16 +29,14 @@ This repository includes all code, stimuli, and preprocessing scripts required t
 
 ## Auditory Modality
 
-The auditory modality includes three blocks:
-- **Regular (beat-based) patterns**
-- **Irregular (non-beat) patterns**
-- **Single durations**
-
 ### Stimulus Generation
 - Auditory stimuli were generated using **MATLAB** script located in the `Matlab/` folder.
 - Stimuli were created externally to ensure **high-quality pure tones**, as PsychoPy-generated sounds did not provide sufficient audio fidelity.
 - Final audio files were placed into condition-specific folders.
-- File paths were referenced via corresponding `.xlsx` files, which were imported into the PsychoPy experiment.
+- File paths were referenced via corresponding `.xlsx` files, which were imported into the PsychoPy experiment:
+  - `mainReg.xlsx`
+  - `mainIrreg.xlsx`
+  - `mainSD.xlsx`
 
 ### Audio Folders
 The following folders contain the auditory stimuli used in the experiment:
@@ -58,32 +56,20 @@ To run the experiment locally, download the auditory stimuli from OSF and place 
 
 ## Visual Modality
 
-The visual modality also includes three blocks:
-- **Regular (beat-based) patterns**
-- **Irregular (non-beat) patterns**
-- **Single durations**
-
 ### Visual Stimulus Design
 - Visual stimuli were created using the **PsychoPy Builder interface**.
 - Stimuli consist of a **black square displayed on a gray background**.
 
-#### Beat-Based and Irregular Patterns
-- The square rotates 45 degrees in the center of the screen.
-- It remains at each location for the duration of interest.
-- This alternating presentation creates a **rhythmic visual movement**.
+#### Beat and non-beat sequence blocks
+- The square rotates 45 degrees in the center of the screen and remains at each location for the duration of interest.
+- This alternating presentation creates a **rhythmic visual rotation**.
 
 #### Single-Interval Condition
-- The square appears in the center of the screen.
-- It remains visible for the duration of interest, without lateral movement.
+- The square appears in the center of the screen and remains visible for the duration of interest, without any movement or rotation.
 
 ---
 
 ## Tactile Modality
-
-The tactile modality also includes three blocks:
-- **Regular (beat-based) patterns**
-- **Irregular (non-beat) patterns**
-- **Single durations**
 
 ### Tactile Stimulus Design
 Tactile stimuli were generated using a custom mobile application developed for **Android devices** using **Android Studio (version 2021.3.1)**. The stimuli were presented on a **Samsung Galaxy S8** smartphone.
@@ -137,7 +123,10 @@ Attention check trials are embedded within **each block** to ensure participant 
 ## Practice Trials
 - Each block begins with **6 practice trials**, two of which are attention checks.
 - Practice trials familiarize participants with the task and response mapping.
-- Answer to practice trials will not be recorded or analyzed.  
+- The practice trials are referenced via separate `.xlsx` files:  
+  - `practiceReg.xlsx`
+  - `practiceIrreg.xlsx`
+  - `practiceSD.xlsx`
 
 ---
 
@@ -145,7 +134,7 @@ Attention check trials are embedded within **each block** to ensure participant 
 To ensure participants are wearing headphones:
 - Participants hear a **spoken three-digit number** before the experiment begins, and must type it correctly to proceed.
 - The audio file used for this check is:
-  - `four-one-one.waw`
+  - `four-one-one.wav`
 
 ---
 
@@ -156,24 +145,14 @@ Before the main experiment:
 
 ---
 
-## Visual Size Standardization
-To standardize visual stimulus size across devices:
-- Participants adjust an on-screen image to match the size of a **physical credit card**.
-- This ensures consistent stimulus size regardless of screen dimensions.
-- The image used is:
-  - `bank-1300155_640.png`
-
----
-
 ## Post-Experiment Questionnaire
 
-After completing the experiment, participants are **automatically redirected** to a questionnaire collecting:
+After completing the experiment, participants completed a questionnaire collecting:
 - Demographic information
 - Music-related background
 - Experiment-related feedback
 
-### Implementation
-- The questionnaire was created using **Qualtrics**.
+The questionnaire was created using **Qualtrics**.
 
 ---
 
@@ -186,13 +165,13 @@ After completing the experiment, participants are **automatically redirected** t
 
 ---
 
-## Usage
+## Implementation
 
 ### Requirements
 - **PsychoPy v2021.2.3**
 
 ### Running the Experiment
-1. Open **PsychoPy Builder**.
+1. Install and open **PsychoPy Builder**.
 2. Load the `InPersonFinal.psyexp` file.
 4. Run the experiment locally.
 - To run locally, **all audio files must be in `.wav` format**.
